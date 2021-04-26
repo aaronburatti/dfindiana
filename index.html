@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>New Age - Start Bootstrap Theme</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+
+  <!-- Custom styles for this template -->
+  <link href="css/new-age.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">DF Indiana</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#map">Map</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#features">Group</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="masthead" id="map">
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="col-lg-7 my-auto">
+          <div class="header-content mx-auto">
+            <h1 class="mb-5">Welcome to Dementia Friendly Indiana!</h1>
+            <h4 class="d-purple bolder">
+              This map shows the locations of the Indiana partners of Dementia Friendly America.
+              Colored-in counties have Dementia Friendly groups!
+              <br/>
+              <br/>
+              <br/> 
+                <span id="county-info">
+                Click on a colored county to learn more about that group!
+              </span>
+            </h4>
+          </div>
+        </div>
+        <div class="col-lg-5 my-auto">
+          <!-- <div class="device-container">
+            <div class="device-mockup iphone6_plus portrait white">
+              <div class="device"> -->
+                <div class="map">
+                  
+                </div>
+             <!--  </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-heading text-center">
+        <h2>Dementia Friendly Detatils</h2>
+        <p id="dfdetails"></p>
+        <hr>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 my-auto">
+          <!-- <div class="device-container">
+            <div class="device-mockup iphone6_plus portrait white">
+              <div class="device">
+                
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <div class="col-lg-8 my-auto">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="feature-item">
+                  <i class="icon-user-female text-primary"></i>
+                  <h3>Leader</h3>
+                  <p class="text-muted" id="leader">Click on a county above to see details!</p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="feature-item">
+                  <i class="icon-heart text-primary"></i>
+                  <h3>Services</h3>
+                  <p class="text-muted" id="services"></p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="feature-item">
+                  <i class="icon-globe text-primary"></i>
+                  <h3>Service Area</h3>
+                  <p class="text-muted" id="area"></p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="feature-item">
+                  <i class="icon-screen-desktop text-primary"></i>
+                  <h3>Website</h3>
+                  <p class="text-muted" id="website"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="download bg-primary text-center" id="download">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto" style="color: white;">
+          <h2 class="bolder">What is Dementia Friendly America?</h2>
+          <h5 class="boldest">Dementia Friendly America (DFA) is a national network of communities, organizations and individuals seeking to ensure that 
+          communities across the U.S. are equipped to support people living with 
+          dementia and their caregivers
+          </h5>
+          <div class="badges">
+            <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
+            <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="contact">
+    <div class="cta-content">
+      <div class="container">
+        <h2>Contact<br/><span id="contact-form-header">Us</span></h2>
+        <!-- <small id="emailHelp" class="form-text" style="color:white;">To change recipient, select a different group on the map</small> -->
+        <form>
+          <!-- <div class="form-group">
+            <label for="emailTo">To</label>
+            <input type="to" class="form-control" id="to" aria-describedby="emailTo" placeholder="Mail To">
+          </div> -->
+          <div class="form-group">
+            <label for="senderEmail">Your Email Address</label>
+            <input type="sender" class="form-control" id="sender" placeholder="me@email.com" value="">
+          </div>
+          <div class="form-group">
+            <label for="emailAbout">About</label>
+            <input type="about" class="form-control" id="about" placeholder="About">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea type="message" class="form-control" id="message" rows="3" placeholder="Enter Your Message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-outline btn-xl js-scroll-trigger">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="overlay"></div>
+  </section>
+
+  <!-- <section class="contact bg-primary" id="contact">
+    <div class="container">
+      <h2>We
+        <i class="fas fa-heart"></i>
+        new friends!</h2>
+      <ul class="list-inline list-social">
+        <li class="list-inline-item social-twitter">
+          <a href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="list-inline-item social-facebook">
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <li class="list-inline-item social-google-plus">
+          <a href="#">
+            <i class="fab fa-google-plus-g"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section> -->
+
+  <footer>
+    <div class="container">
+      <p>&copy; Dementia Friendly Indiana 2021. All Rights Reserved.</p>
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <!-- <a href="#">Privacy</a> -->
+        </li>
+        <li class="list-inline-item">
+          <!-- <a href="#">Terms</a> -->
+        </li>
+        <li class="list-inline-item">
+          <!-- <a href="#">FAQ</a> -->
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
+  <!-- <script src="d3.js"></script> -->
+
+  <!-- Custom scripts for this template -->
+  <script src="js/new-age.min.js"></script>
+  <script>
+    var width = 380 + "px",
+        height = 700 + "px";
+
+    var svg = d3.select( ".map" )        
+        .append( "svg" )             
+        .attr( "width", width )     
+        .attr( "height", height );
+
+    var projection = d3.geo.albers()
+         .center([0, 40.5])
+         .rotate([83.7, 0, 0])
+         .scale(8000);
+         
+
+    var geoPath = d3.geo.path()
+        .projection(projection);
+
+    queue()
+        .defer(d3.json, "indiana.json")
+        .await(ready);
+    
+
+        // var mouseover = function(d) {
+        //   d3.select(this)
+        //     .attr("title", d3.select(this).datum().properties.NAME_L)
+        // }
+        
+        // var mousemove = function(d) {
+        //     d3.select(this)
+        //     .html("This is a county")
+        //     .style("left", (d3.mouse(this)[0]+70) + "px")
+        //     .style("top", (d3.mouse(this)[1]) + "px")
+        // }
+        
+        // var mouseleave = function(d) {
+        //   Tooltip
+        //     .style("opacity", 0)
+        //   d3.select(this)
+        //     .style("stroke", "none")
+        //     .style("opacity", 0.8)
+        // }
+
+        
+        
+
+
+        // .on("mouseout", function(d){
+        //     d3.select('h2').text('');
+        //     d3.select(this).attr('class', 'county');
+        // })
+
+
+    function ready(error, counties){
+
+    svg.append('g')
+        .selectAll('path')
+        .data(counties.features)
+        .enter()
+        .append('path')
+        .attr('d', geoPath)
+        .attr('class', 'county')
+        .style("fill", function(d){
+          $name = d3.select(this).datum().properties.NAME_L;
+          if( $name == "Monroe" || $name == "Lawrence" || $name == "Hamilton" || $name == "Pike" || $name == "Spencer"){
+            return "#650a8b";
+          }
+        })
+
+        .on("mouseover", function(d){
+          $name = d3.select(this).datum().properties.NAME_L;
+          if( $name == "Monroe" || $name == "Lawrence" || $name == "Hamilton" || $name == "Pike" || $name == "Spencer"){
+          d3.select(this)
+              .attr("data-toggle", "tooltip")
+              .attr("data-placement", "top")
+              .attr("title", $name)
+           }
+        })
+        
+        .on("click", function(d){          
+          $name = d3.select(this).datum().properties.NAME_L;
+           if( $name === "Monroe" || $name === "Lawrence" || $name === "Hamilton" 
+               || $name === "Pike" || $name === "Spencer"){        
+               d3.select("#county-info")
+               .html('Scroll down to learn more about Dementia Friendly <b>' + $name + '</b> County');
+               d3.select("#contact-form-header")
+               .text("DF " + $name + " County")
+               
+               if(!d3.select("#dfdetails").empty()){
+                    d3.select("#dfdetails").text("Scroll to the bottom of the page to contact this group")
+                }  
+
+               if( $name === "Monroe"){
+                  d3.select("#leader").text("DF Bloomington (Monroe County) is led by Amanda Mosier");
+                  d3.select("#area").text("They serve Monroe, Morgan, Owen, Greene, Davies, Martin, Orange, Washington, Jackson, and Brown counties")
+                  d3.select("#services").text("They offer Individual Consultation, Support Groups, Education, a Resource Library, Professional Consultation, Travel and respite vouchers, and Dementia Friendly Initiatives")
+                  d3.select("#website").html("Find them at <a href='http://dfbloomington.org/'>www.dfbloomington.org</a>")
+               } 
+               if( $name === "Lawrence" ){
+                  d3.select("#leader").text("DF Lawrence County is led by Shelly Gilbert");
+                  d3.select("#area").text("They Serve Lawrence County")
+                  d3.select("#services").text("They offer Professional Consultation, Web Resources, Education, and Dimentia Friendly Initiatives")
+                  d3.select("#website").html("Find them at <a href='http://dflawrencecounty.org/'>www.dflawrencecounty.org</a>")
+
+               }  
+               if($name === "Hamilton"){
+                  d3.select("#leader").text("DF Hamilton County is led by Dustin Ziegler");
+                  d3.select("#area").text("")
+                  d3.select("#services").text("")
+                  d3.select("#website").html("Find them at <a href='https://cicoa.org/'>www.cicoa.org</a>")
+
+               }
+               if($name === "Pike"){
+                  d3.select("#leader").text("DF Petersburg (Pike County) is led by Brenda Hancock");
+                  d3.select("#area").text("")
+                  d3.select("#services").text("")
+                  d3.select("#website").html("")
+
+               } 
+               if($name === "Spencer"){
+                  d3.select("#leader").text("DF Rockport (Spenser County) is led by Linda Wright");
+                  d3.select("#area").text("")
+                  d3.select("#services").text("")
+                  d3.select("#website").html("")
+
+               }
+           
+           } 
+        })
+        
+}
+  </script>
+  <script type="text/javascript">
+    $("body").tooltip({
+        selector: '[data-toggle="tooltip"]'
+    });
+  </script>
+
+</body>
+
+</html>
