@@ -1,0 +1,48 @@
+{
+	"groups": [{
+
+		"Monroe": {
+			"countyName": "Monroe",
+			"groupName": "Dementia Friendly Monroe County",
+			"lead": "Amanda Mosier",
+			"website": "www.dfbloomington.org",
+			"services": "Individual Consultation, Support Groups, Education, a Resource Library, Professional Consultation, Travel and respite vouchers, and Dementia Friendly Initiatives",
+			"serviceArea": "Monroe, Morgan, Owen, Greene, Davies, Martin, Orange, Washington, Jackson, and Brown counties"
+		},
+
+		"Lawrence": {
+			"countyName": "Lawrence",
+			"lead": "Shelley Gilbert",
+			"groupName": "Dementia Friendly Lawrence County",
+			"website": "www.dflawrencecounty.org",
+			"services": "Professional Consultation, Web Resources, Education, and Dimentia Friendly Initiatives",
+			"serviceArea": "Lawrence county"
+		},
+
+		"Hamilton": {
+			"countyName": "Hamilton",
+			"groupName": "Dementia Friendly Hamilton County",
+			"lead": "Dustin Zeigler",
+			"website": "www.cicoa.org",
+			"services": "",
+			"serviceArea": "Hamilton county"
+		},
+		"Pike": {
+			"countyName": "Pike",
+			"groupName": "Dementia Friendly Petersburg",
+			"lead": "Brenda Hancock",
+			"website": "",
+			"services": "",
+			"serviceArea": "Petersburg"
+		},
+
+		"Spencer": {
+			"countyName": "Spencer",
+			"lead": "Linda Wright",
+			"groupName": "Dementia Friendly Rockport",
+			"website": "",
+			"services": "",
+			"serviceArea": "Rockport"
+		}
+	}]
+}

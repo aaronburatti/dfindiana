@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -161,26 +164,41 @@
     <div class="cta-content">
       <div class="container">
         <h2>Contact<br/><span id="contact-form-header">Us</span></h2>
-        <?php if(isset($_GET['message']) && !empty($_GET['message'])){ ?>
-        <p><?php echo $_GET['message'] ?></p>
-        <?php } ?>
-        <form action="phpmailer/mail.php" method="GET">
+        <h5 class="light"><?php 
+              if(!empty($_SESSION['msg'])){
+                  echo $_SESSION['msg']; 
+                }
+                ?>
+        </h5>
+        <form action="phpmailer/mail.php" method="POST">
           <div class="form-group">
-            <label for="senderEmail">Your Name</label>
-            <input type="text" name="name" class="form-control" id="name" placeholder="e.g. Andrew Smith">
+            <label for="to" >To</label>
+            <select class="form-control" id="selectTo" name="to">
+              <option value="Monroe">DF Monroe County</option>
+              <option value="Lawrence">DF Lawrence County</option>
+              <option value="Hamilton">DF Hamilton County</option>
+              <option value="Pike">DF Petersburg</option>
+              <option value="Spencer">DF Rockport</option>
+            </select>
           </div>
           <div class="form-group">
-            <label for="senderEmail">Your Email Address</label>
-            <input type="email" name="email" class="form-control" id="sender" placeholder="me@email.com">
+            <label for="senderEmail">Your Name*</label>
+            <input type="text" name="name" class="form-control" id="name" placeholder="e.g. Andrew Smith" required>
+          </div>
+          <div class="form-group">
+            <label for="senderEmail">Email Address*</label>
+            <input type="email" name="email" class="form-control" id="sender" placeholder="your@email.com" required>
           </div>
           <div class="form-group">
             <label for="emailAbout">Subject</label>
             <input type="about" name="subject" class="form-control" id="about" placeholder="Subject">
           </div>
           <div class="form-group">
-            <label for="message">Message</label>
-            <textarea type="message" name="message" class="form-control" id="message" rows="3" placeholder="Enter Your Message"></textarea>
+            <label for="message">Message*</label>
+            <textarea type="message" name="message" class="form-control" id="message" rows="3" placeholder="Enter Your Message" required></textarea>
           </div>
+          <small>* = required</small>
+              </br>
           <button type="submit" id="contactSubmit" class="btn btn-outline btn-xl js-scroll-trigger">Submit</button>
         </form>
       </div>
@@ -273,13 +291,16 @@
                .html('Scroll down to learn more about Dementia Friendly <b>' + $name + '</b> County. ');
                d3.select("#contact-form-header")
                .text("DF " + $name + " County")
+
+               d3.select("#selectTo")
+                   .attr("value", $name)
                
                if(!d3.select("#dfdetails").empty()){
                     d3.select("#dfdetails").text("Scroll to the bottom of the page to contact this group")
                 }  
 
                if( $name === "Monroe"){
-                  d3.select("#leader").text("DF Bloomington (Monroe County) is led by Amanda Mosier");
+                  d3.select("#leader").text("DF Bloomington's (Monroe County) lead is Amanda Mosier");
                   d3.select("#area").text("They serve Monroe, Morgan, Owen, Greene, Davies, Martin, Orange, Washington, Jackson, and Brown counties")
                   d3.select("#services").text("They offer Individual Consultation, Support Groups, Education, a Resource Library, Professional Consultation, Travel and respite vouchers, and Dementia Friendly Initiatives")
                   d3.select("#website").html("To find events and more visit <u><a href='http://dfbloomington.org/'>the DFB website</a></u>")
@@ -288,10 +309,14 @@
                     .html(" Or visit <u><a href='http://dfbloomington.org/'> the website</a></u>")
                 } 
                if( $name === "Lawrence" ){
-                  d3.select("#leader").text("DF Lawrence County is led by Shelly Gilbert");
-                  d3.select("#area").text("They Serve Lawrence County")
-                  d3.select("#services").text("They offer Professional Consultation, Web Resources, Education, and Dimentia Friendly Initiatives")
-                  d3.select("#website").html("To see everything, visit <u><a href='http://dflawrencecounty.org/'>the DFLC website</a></u>")
+                  d3.select("#leader")
+                    .text("DF Lawrence County's lead is Shelly Gilbert");
+                  d3.select("#area")
+                    .text("They Serve Lawrence County")
+                  d3.select("#services")
+                    .text("They offer Professional Consultation, Web Resources, Education, and Dimentia Friendly Initiatives")
+                  d3.select("#website")
+                    .html("To see everything, visit <u><a href='http://dflawrencecounty.org/'>the DFLC website</a></u>")
                   d3.select("#county-info")
                     .append("span")
                     .html("Or visit <u><a href='http://dflawrencecounty.org/'>the website</a></u>")
